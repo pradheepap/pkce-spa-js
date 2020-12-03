@@ -4,12 +4,13 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "serve -p 3000 public"
+    "start": "serve -p 443 public --cors --ssl-cert ~/server.crt --ssl-key ~/server.key",
+    "servehelp": "serve --help"
   },
   "author": "Pradheepa",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
-    "serve": "^5.1.5"
+    "serve": "^11.3.2"
   }
 }
