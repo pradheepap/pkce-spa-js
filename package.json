@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "serve -p 443 public --cors --ssl-cert ~/server.crt --ssl-key ~/server.key",
+    "serve-https": "serve -p 443 public --cors --ssl-cert ~/server.crt --ssl-key ~/server.key",
+    "start": "serve -p 3000 public --cors",
     "servehelp": "serve --help"
   },
   "author": "Pradheepa",
