@@ -1,0 +1,15 @@
+{
+  "name": "pkce-spa-js",
+  "version": "0.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "serve -p 3000 public"
+  },
+  "author": "Pradheepa",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "serve": "^5.1.5"
+  }
+}
