@@ -214,25 +214,6 @@ function sendPostRequest(url, params, success, error) {
     request.send(body);
 }
 
-// Make a POST request and parse the response as JSON
-function sendGetRequest(url, params, success, error) {
-    var request = new XMLHttpRequest();
-    request.open('GET', url, true);
-    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
-    request.onload = function() {
-        if(request.status == 200) {
-            success(request, body);
-        } else {
-            error(request, body);
-        }
-    }
-    request.onerror = function() {
-        error(request, {});
-    }
-    var body = Object.keys(params).map(key => key + '=' + params[key]).join('&');
-    request.send(body);
-}
-
 // Parse a query string into an object
 function parseQueryString(string) {
     console.log(string);
